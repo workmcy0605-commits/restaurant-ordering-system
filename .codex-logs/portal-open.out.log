@@ -1,0 +1,15 @@
+
+> soybean-admin@2.1.0 dev C:\laragon\www\ifos-be\apps\admin-portal
+> vite --mode test "--" "--host" "localhost"
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [42m [1mtest[22m [49m  [2mready in [0m[1m2459[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m9527[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.22.128.1:[1m9527[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.99.123:[1m9527[22m/[39m
+  ➜  Vue DevTools: Open http://localhost:9527/__devtools__/ as a separate window
+  ➜  Vue DevTools: Press Alt(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+  [32m➜[39m  [1mUnoCSS Inspector[22m: [36mhttp://localhost:[1m9527[22m/__unocss/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[35mo[39m [elegant-router] watcher ready

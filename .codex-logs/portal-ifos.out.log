@@ -1,0 +1,203 @@
+
+> soybean-admin@2.1.0 dev C:\laragon\www\ifos-be\apps\admin-portal
+> vite --mode test "--" "--host" "localhost"
+
+
+  [32m[1mVITE[22m v7.3.1[39m  [42m [1mtest[22m [49m  [2mready in [0m[1m2321[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m9527[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.0.24:[1m9527[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.22.128.1:[1m9527[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.99.123:[1m9527[22m/[39m
+  ➜  Vue DevTools: Open http://localhost:9527/__devtools__/ as a separate window
+  ➜  Vue DevTools: Press Alt(⌥)+Shift(⇧)+D in App to toggle the Vue DevTools
+  [32m➜[39m  [1mUnoCSS Inspector[22m: [36mhttp://localhost:[1m9527[22m/__unocss/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[35mo[39m [elegant-router] watcher ready
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins/options
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies/options
+[proxy url]:  POST  /proxy-default/api/v1/auth/login
+[real request url]: http://127.0.0.1:8001/api/v1/auth/login
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles/options
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches/options
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants/options
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants/options
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants/options
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants/options
+[2m10:17:36 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ifos/api-browser-page.vue[22m
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=25
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=25
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles?items=25
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles?items=25
+[2m10:42:10 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/service/api/ifos.ts[22m
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[2m10:45:07 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/home/index.vue[22m
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=5
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/users?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/users?items=1
+[proxy url]:  GET  /proxy-default/api/v1/menu-management/menu-items?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/menu-management/menu-items?items=5
+[proxy url]:  GET  /proxy-default/api/v1/system-setting/audits?items=6
+[real request url]: http://127.0.0.1:8001/api/v1/system-setting/audits?items=6
+[2m10:45:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/transform.ts[22m
+[2m10:45:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/transform.ts[22m
+[2m10:45:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/imports.ts[22m
+[2m10:45:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/routes.ts[22m
+[2m10:45:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/routes.ts[22m
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=5
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/users?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/users?items=1
+[proxy url]:  GET  /proxy-default/api/v1/menu-management/menu-items?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/menu-management/menu-items?items=5
+[proxy url]:  GET  /proxy-default/api/v1/system-setting/audits?items=6
+[real request url]: http://127.0.0.1:8001/api/v1/system-setting/audits?items=6
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=5
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/users?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/users?items=1
+[proxy url]:  GET  /proxy-default/api/v1/menu-management/menu-items?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/menu-management/menu-items?items=5
+[proxy url]:  GET  /proxy-default/api/v1/system-setting/audits?items=6
+[real request url]: http://127.0.0.1:8001/api/v1/system-setting/audits?items=6
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=5
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/users?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/users?items=1
+[proxy url]:  GET  /proxy-default/api/v1/menu-management/menu-items?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/menu-management/menu-items?items=5
+[proxy url]:  GET  /proxy-default/api/v1/system-setting/audits?items=6
+[real request url]: http://127.0.0.1:8001/api/v1/system-setting/audits?items=6
+[2m11:01:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/service/api/index.ts[22m
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/account-management/admins?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/admins?items=5
+[proxy url]:  GET  /proxy-default/api/v1/account-management/roles?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/roles?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/companies?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/companies?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/branches?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/branches?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/restaurants?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/restaurants?items=1
+[proxy url]:  GET  /proxy-default/api/v1/account-management/users?items=1
+[real request url]: http://127.0.0.1:8001/api/v1/account-management/users?items=1
+[proxy url]:  GET  /proxy-default/api/v1/menu-management/menu-items?items=5
+[real request url]: http://127.0.0.1:8001/api/v1/menu-management/menu-items?items=5
+[proxy url]:  GET  /proxy-default/api/v1/system-setting/audits?items=6
+[real request url]: http://127.0.0.1:8001/api/v1/system-setting/audits?items=6
+[2m11:02:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/home/index.vue, /src/views/home/index.vue?vue&type=style&index=0&scoped=0ef3d734&lang.css[22m
+[36mi[39m [elegant-router] The pages changed, regenerating the dts file and routes...
+[2m11:02:20 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/transform.ts[22m
+[2m11:02:20 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/imports.ts[22m
+[2m11:02:20 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/routes.ts[22m
+[32m√[39m [elegant-router] The dts file and routes have been regenerated successfully
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[2m11:04:16 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/home/index.vue, /src/views/home/index.vue?vue&type=style&index=0&scoped=0ef3d734&lang.css[22m
+[36mi[39m [elegant-router] The pages changed, regenerating the dts file and routes...
+[2m11:04:16 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/transform.ts[22m
+[2m11:04:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/imports.ts[22m
+[2m11:04:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/routes.ts[22m
+[32m√[39m [elegant-router] The dts file and routes have been regenerated successfully
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/dashboard/overview
+[real request url]: http://127.0.0.1:8001/api/v1/dashboard/overview
+[2m11:05:14 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/home/index.vue, /src/views/home/index.vue?vue&type=style&index=0&scoped=0ef3d734&lang.css[22m
+[2m11:05:31 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/transform.ts[22m
+[2m11:05:31 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/imports.ts[22m
+[2m11:05:31 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/routes.ts[22m
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/dashboard/overview
+[real request url]: http://127.0.0.1:8001/api/v1/dashboard/overview
+[2m11:07:09 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/transform.ts[22m
+[2m11:07:09 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/imports.ts[22m
+[2m11:07:10 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/elegant/routes.ts[22m
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/dashboard/overview
+[real request url]: http://127.0.0.1:8001/api/v1/dashboard/overview
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  POST  /proxy-default/api/v1/auth/refresh
+[real request url]: http://127.0.0.1:8001/api/v1/auth/refresh
+[proxy url]:  GET  /proxy-default/api/v1/auth/me
+[real request url]: http://127.0.0.1:8001/api/v1/auth/me
+[proxy url]:  GET  /proxy-default/api/v1/dashboard/overview
+[real request url]: http://127.0.0.1:8001/api/v1/dashboard/overview
+[proxy url]:  GET  /proxy-default/api/v1/dashboard/overview
+[real request url]: http://127.0.0.1:8001/api/v1/dashboard/overview
+ ELIFECYCLE  Command failed with exit code 3221225786.

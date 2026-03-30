@@ -18,6 +18,7 @@ class ApiController extends Controller
         $payload = [
             'code' => '0000',
             'message' => $message,
+            'msg' => $message,
             'data' => $data,
         ];
 
@@ -26,6 +27,16 @@ class ApiController extends Controller
         }
 
         return response()->json($payload, $status);
+    }
+
+    protected function error(string $code, string $message, int $status = 200, mixed $data = null): JsonResponse
+    {
+        return response()->json([
+            'code' => $code,
+            'message' => $message,
+            'msg' => $message,
+            'data' => $data,
+        ], $status);
     }
 
     protected function created(mixed $data = null, string $message = 'Created successfully.'): JsonResponse

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 
@@ -119,12 +120,24 @@ class User extends Authenticatable
 
         $cacheKey = 'role_permissions_'.$this->role_id;
 
-        $this->cachedPermissions = Cache::rememberForever($cacheKey, function () {
-            return DB::table('role_permissions')
+        $cachedPermissions = Cache::get($cacheKey);
+
+        if ($cachedPermissions === null) {
+            $cachedPermissions = DB::table('role_permissions')
                 ->where('role_id', $this->role_id)
                 ->whereNull('deleted_at')
-                ->pluck('permission_name');
-        });
+                ->pluck('permission_name')
+                ->values()
+                ->all();
+
+            Cache::forever($cacheKey, $cachedPermissions);
+        }
+
+        $this->cachedPermissions = $this->normalizeCachedPermissions($cachedPermissions);
+
+        if (! is_array($cachedPermissions) || $cachedPermissions !== $this->cachedPermissions->all()) {
+            Cache::forever($cacheKey, $this->cachedPermissions->all());
+        }
 
         return $this->cachedPermissions;
     }
@@ -161,7 +174,9 @@ class User extends Authenticatable
         $permissions = DB::table('role_permissions')
             ->where('role_id', $roleId)
             ->whereNull('deleted_at')
-            ->pluck('permission_name');
+            ->pluck('permission_name')
+            ->values()
+            ->all();
 
         Cache::forever($cacheKey, $permissions);
     }
@@ -169,5 +184,40 @@ class User extends Authenticatable
     public function getOrderType(): string
     {
         return $this->restaurant_id ? 'restaurant' : 'user';
+    }
+
+    private function normalizeCachedPermissions(mixed $permissions): Collection
+    {
+        if ($permissions instanceof Collection) {
+            return $permissions
+                ->filter(fn ($permission) => is_string($permission) && $permission !== '')
+                ->values();
+        }
+
+        if (is_array($permissions)) {
+            return collect($permissions)
+                ->filter(fn ($permission) => is_string($permission) && $permission !== '')
+                ->values();
+        }
+
+        if ($permissions instanceof \Traversable) {
+            return collect(iterator_to_array($permissions))
+                ->filter(fn ($permission) => is_string($permission) && $permission !== '')
+                ->values();
+        }
+
+        if (is_object($permissions)) {
+            $rawPermissions = (array) $permissions;
+
+            foreach ($rawPermissions as $value) {
+                if (is_array($value)) {
+                    return collect($value)
+                        ->filter(fn ($permission) => is_string($permission) && $permission !== '')
+                        ->values();
+                }
+            }
+        }
+
+        return collect();
     }
 }

@@ -1,0 +1,9 @@
+[2m8:54:49 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/v1/auth/login[39m
+Error: getaddrinfo ENOTFOUND api.admin-staging.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+[2m8:55:08 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/v1/auth/login[39m
+Error: getaddrinfo ENOTFOUND api.admin-staging.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+[2m8:55:09 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/v1/auth/me[39m
+Error: getaddrinfo ENOTFOUND api.admin-staging.example.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
